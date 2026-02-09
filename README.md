@@ -1,25 +1,34 @@
-# Observe Portal
+Repositories & Documentation 
+1. Observe Portal (Frontend & Backend)
 
-## Overview
+Repository: https://github.com/COSS-India/observe
 
-A standalone observability interface that can be deployed by Adopters who already have metrics available and need multi-tenant visualization, and administrative control over dashboards and access. 
+Wiki: https://github.com/COSS-India/observe/wiki
 
+Key Highlights:
 
-## What You'll Get
+Built using Next.js with integrated admin dashboards, folders, and teams.
 
-- **Grafana Integration**: Centralized dashboard, folder, team, and user management
-- **Organization Management**: Multi-tenant support for different organizations
-- **Team Management**: Organize users into teams with specific access levels
-- **Secure Authentication**: Adopter-integrated authentication with captcha and JWT tokens (done via Simulator)
-- **Modern Interface**: Clean, responsive UI built with Next.js and Tailwind CSS
+Supports user, organization, and team management with role-based access control.
 
-## Architecture
+Backend powered by FastAPI, integrated with adopteradopter authentication, captcha verification, JWT-based security, and PostgreSQL database persistence.
 
-The observe portal has two main components:
+Ready-to-deploy setup on Vercel/Netlify.
 
-1. **Frontend (Next.js)**: Web interface for portal administration
-2. **Backend (FastAPI)**: Authentication service with PostgreSQL database
+2. Observe Util (Observability & Metrics Layer)
 
---- 
-For setup and details, prefer refer to the wiki page - https://github.com/COSS-India/observe/wiki
-# AI-for-Inclusivity-
+Repository: https://github.com/COSS-India/observe-util
+
+Wiki: https://github.com/COSS-India/observe-util/wiki
+
+Key Highlights:
+
+10+ built-in metrics for requests, latency, errors, and business KPIs.
+
+Middleware for multi-tenant metrics isolation and JWT-based tenant extraction.
+
+Native Prometheus-compatible endpoint (/enterprise/metrics) and pre-built Grafana dashboards.
+
+Monitors system-level and business metrics - NMT/ASR/TTS metrics (characters, audio seconds), CPU/memory/Error Rate).
+
+Designed for Dhruva Platform and adaptable to any FastAPI-based service
